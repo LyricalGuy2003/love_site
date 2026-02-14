@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INTRO -->
+    <div class="intro" onclick="nextPage()">
+        <img src="media/heart.png" class="float h1">
+        <img src="media/heart.png" class="float h2">
+        <img src="media/heart.png" class="float h3">
+        <img src="media/heart.png" class="float h4">
+        <img src="media/heart.png" class="float h5">
+        <img src="media/heart.png" class="float h6">
+
+        <div class="center">
+            <p class="love-text">For you, my love ❤️</p>
+            <img src="media/heart.png" class="main-heart">
+            <p class="hint-text">Tap gently ❤️</p>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page2 hidden">
+
+        <div class="gif-container">
+            <img src="media/bubbu.webp" class="love-gif">
+        </div>
+
+        <div class="welcome-text-area">
+            <h2 class="welcome-text">Hey love… ❤️</h2>
+            <p class="welcome-sub">
+                I made this just for you.<br>
+                Every line, every heart — only yours.
+            </p>
+        </div>
+
+        <div class="chat-box">
+            <div class="chat glass">
+                <span id="typing-text"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page3 hidden">
+
+        <h2 class="story-heading">
+            If You and Me Were Just Two Silly Bears 🐻❤️
+        </h2>
+
+
+        <div class="story-container">
+            <img id="story-gif" class="story-gif" src="" loading="eager">
+            <p id="story-text" class="story-text"></p>
+        </div>
+
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page4" style="display: none;">
+
+        <h2 class="audio-heading">
+            Click to know the answers❤️
+        </h2>
+
+        <div class="audio-container">
+
+            <div class="audio-box right" data-audio="media/song1.mp3">
+                <!-- What I Think About Your Eyes -->
+                What I think about the day we met for the first time
+            </div>
+
+            <div class="audio-box left" data-audio="media/song2.mp3">
+                Things I tend to do when I am with you
+            </div>
+
+            <div class="audio-box right" data-audio="media/song3.mp3">
+                The little things about you that no one else has
+            </div>
+
+            <div class="audio-box left" data-audio="media/song4.mp3">
+                What changed after you came into my life
+            </div>
+
+            <div class="audio-box right" data-audio="media/song5.mp3">
+                When your presence lingers even when you're not here
+            </div>
+
+            <div class="audio-box left" data-audio="media/song6.mp3">
+                When you think about why we met, just remember this
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:40px;">
+            <button class="next-btn" onclick="goToFinalPage()">
+                Next Page ❤️
+            </button>
+        </div>
+    </div>
+
+
+    <!-- PAGE 5 -->
+    <!-- PAGE 5 -->
+    <div class="page5 hidden" style="display:none;">
+
+        <div class="final-container">
+
+            <h2 class="final-text" id="finalText">
+                Happy valentines day madam ji, I love you sooooooooo much!!!!! ❤️
+            </h2>
+
+            <img src="media/love.gif" class="final-gif hidden" id="finalGif">
+
+            <button class="replay-btn hidden" id="replayBtn" onclick="restartExperience()">
+                Replay from Beginning 💕
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <audio id="bgMusic" loop>
+        <source src="media/bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
